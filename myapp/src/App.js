@@ -6,8 +6,12 @@ import Navbar from "./Navbar";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <FriendList />
+      <div className="NavBar">
+        <Navbar />
+      </div>
+      <div className="FriendList">
+        <FriendList />
+      </div>
     </div>
   );
 }

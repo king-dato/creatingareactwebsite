@@ -4,8 +4,10 @@ import LoginSignup from "./pages/LoginSignup";
 
 function App() {
   return (
-    <div className="AppLogin">
-      <LoginSignup />
+    <div className="App">
+      <div className="NavBar">
+        <LoginSignup />
+      </div>
     </div>
   );
 }

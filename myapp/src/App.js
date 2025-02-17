@@ -1,13 +1,11 @@
 import "./App.css";
 
-import LoginSignup from "./components/LoginSignup/LoginSignup";
+import LoginSignup from "./pages/LoginSignup";
 
 function App() {
   return (
-    <div className="App">
-      <div className="NavBar">
-        <LoginSignup />
-      </div>
+    <div className="AppLogin">
+      <LoginSignup />
     </div>
   );
 }

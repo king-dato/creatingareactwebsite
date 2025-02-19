@@ -49,21 +49,8 @@ const LoginSignup = () => {
           Sign Up
         </button>
         <button
-          style={{
-            backgroundColor: "#4CAF50",
-            color: "white",
-            border: "none",
-            padding: "10px 20px",
-            textAlign: "center",
-            textDecoration: "none",
-            display: "inline-block",
-            fontSize: "16px",
-            margin: "10px 2px",
-            cursor: "pointer",
-            borderRadius: "5px",
-          }}
           className={action === "Sign Up" ? "submit gray" : "submit"}
-          onClick={handleNavigation}
+          onClick={handleNavigation} // ✅ Fix here
         >
           Log In
         </button>

@@ -1,16 +1,19 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginSignup from "./pages/LoginSignup";
-import Home from "./pages/Home";
-import Topnav from "./components/topnav";
+
+import Home from "./components/Home";
+import Login from "./pages/LoginSignup";
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Topnav />} />
-        <Route path="/login" element={<LoginSignup />} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
 }
+
 export default App;

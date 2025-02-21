@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { useNavigate } from "react-router-dom";
 import user_icon from "../components/Assets/person.png";
 import email_icon from "../components/Assets/email.png";
@@ -8,10 +9,6 @@ import "./LoginSignup.css";
 const LoginSignup = () => {
   const [action, setAction] = useState("Sign Up");
   const navigate = useNavigate();
-
-  const handleNavigation = () => {
-    navigate("/login"); // Navigate to the login page
-  };
 
   return (
     <div className="container">
@@ -50,7 +47,7 @@ const LoginSignup = () => {
         </button>
         <button
           className={action === "Sign Up" ? "submit gray" : "submit"}
-          onClick={handleNavigation} // ✅ Fix here
+          onClick={() => navigate("login2")}
         >
           Log In
         </button>

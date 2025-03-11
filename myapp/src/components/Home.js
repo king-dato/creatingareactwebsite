@@ -1,7 +1,15 @@
 import React from "react";
+import { StyledEngineProvider } from "@mui/material/styles";
+import Appbar from "./Appbar";
 
 function Home() {
-  return <h1>Welcome to the Home Page!</h1>;
+  return (
+    <>
+      <StyledEngineProvider injectFirst>
+        <Appbar />
+      </StyledEngineProvider>
+    </>
+  );
 }
 
 export default Home;
